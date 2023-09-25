@@ -1,11 +1,20 @@
 import React from "react";
 import Friend from "./Friend";
 
-export default function FriendsList({ friend }) {
+export default function FriendsList({
+  friend,
+  selectedFriend,
+  onSelectFriend,
+}) {
   return (
     <ul>
       {friend.map((friend) => (
-        <Friend friend={friend} key={friend.id} />
+        <Friend
+          selectedFriend={selectedFriend}
+          onSelectFriend={onSelectFriend}
+          friend={friend}
+          key={friend.id}
+        />
       ))}
     </ul>
   );
