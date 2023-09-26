@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Introducing Eat-N-Split – Your Effortless Bill-Splitting Solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Eat-N-Split, a user-friendly front-end web application built with React and styled using CSS flexbox and grid for a clean and intuitive layout. Eat-N-Split simplifies the process of splitting bills with friends, making financial management a breeze.
 
-## Available Scripts
+## Screenshot
 
-In the project directory, you can run:
+![screenshot](/public/ss1.png)
 
-### `npm start`
+## Live site
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Here is a live site for the project for you to try out!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- https://aaliyanasif.github.io/eat-n-split/
 
-### `npm test`
+**Key Features:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Add and Customize Friends:**
 
-### `npm run build`
+With 'Eat-N-Split,' you can easily add friends and give them unique names and pictures. You have the flexibility to use online links to personalize their profile images or let the app generate a random picture for you.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Effortless Bill Splitting:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Selecting a friend from your list, you can effortlessly split bills by entering the total amount and specifying your individual expenses. Choose who pays the bill – you or your friend – and Eat-N-Split will calculate the owed amount for each of you.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Clear Debt Tracking:**
 
-### `npm run eject`
+Eat-N-Split ensures transparent debt tracking. The app displays, next to each friend's name, how much they owe you or vice versa. If the balances are even, it will show that you're settled up, eliminating any confusion.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Easy Friend Removal:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you no longer want to track expenses with a specific friend, Eat-N-Split offers a simple removal feature. Just select the friend, and click the Remove Friend button and they'll be removed from your friends list.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Eat-N-Split is your go-to solution for seamless and transparent bill splitting among friends. It's designed to make your financial interactions smoother and more enjoyable, allowing you to focus on the moments spent together rather than worrying about who owes what. Start using Eat-N-Split today and experience the ease of managing shared expenses with friends."
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshots
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![screenshot](/public/ss2.png)
+![screenshot](/public/ss.png)
