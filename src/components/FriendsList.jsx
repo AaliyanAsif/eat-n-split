@@ -7,7 +7,7 @@ export default function FriendsList({
   onSelectFriend,
 }) {
   return (
-    <ul>
+    <ul className="scroll">
       {friend.map((friend) => (
         <Friend
           selectedFriend={selectedFriend}

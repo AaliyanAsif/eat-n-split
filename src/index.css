@@ -203,3 +203,16 @@ form h2 {
   letter-spacing: -0.5px;
   margin-bottom: 1.6rem;
 }
+
+.scroll {
+  margin: 5px;
+  padding: 5px;
+
+  height: 42vh;
+  overflow: auto;
+  text-align: justify;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
