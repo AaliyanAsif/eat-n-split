@@ -35,4 +35,5 @@ Eat-N-Split is your go-to solution for seamless and transparent bill splitting a
 ## Screenshots
 
 ![screenshot](/public/ss2.png)
+
 ![screenshot](/public/ss.png)
