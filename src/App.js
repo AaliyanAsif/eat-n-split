@@ -3,6 +3,7 @@ import Button from "./components/Button";
 import FormAddFriend from "./components/FormAddFriend";
 import FormSplitBill from "./components/FormSplitBill";
 import FriendsList from "./components/FriendsList";
+import Heading from "./components/Heading";
 
 const initialFriends = [
   {
@@ -55,25 +56,28 @@ function App() {
     setSelectedFriend(null);
   }
   return (
-    <div className="app">
-      <div className="sidebar">
-        <FriendsList
-          friend={friend}
-          onSelectFriend={handleSelection}
-          selectedFriend={selectedFriend}
-        />
-        {showAddFriend && <FormAddFriend onAddFriend={handleAddFriend} />}
-        <Button onClick={handleShowAddFriend}>
-          {showAddFriend ? "Close" : "Add Friend"}
-        </Button>
-      </div>
+    <div>
+      <Heading />
+      <div className="app">
+        <div className="sidebar">
+          <FriendsList
+            friend={friend}
+            onSelectFriend={handleSelection}
+            selectedFriend={selectedFriend}
+          />
+          {showAddFriend && <FormAddFriend onAddFriend={handleAddFriend} />}
+          <Button onClick={handleShowAddFriend}>
+            {showAddFriend ? "Close" : "Add Friend"}
+          </Button>
+        </div>
 
-      {selectedFriend && (
-        <FormSplitBill
-          selectedFriend={selectedFriend}
-          onSplitBill={handleSplitBill}
-        />
-      )}
+        {selectedFriend && (
+          <FormSplitBill
+            selectedFriend={selectedFriend}
+            onSplitBill={handleSplitBill}
+          />
+        )}
+      </div>
     </div>
   );
 }

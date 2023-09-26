@@ -5,7 +5,7 @@ export default function Friend({ friend, selectedFriend, onSelectFriend }) {
   const isSelected = selectedFriend?.id === friend.id;
 
   return (
-    <li className={isSelected ? "selected" : ""}>
+    <li className={isSelected ? "selected" : "nuetral"}>
       <img src={friend.image} alt={friend.name} />
       <h3>{friend.name}</h3>
 

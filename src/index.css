@@ -2,6 +2,7 @@
   --color-lightest: #fff4e6;
   --color-light: #ffe8cc;
   --color-medium: #ffa94d;
+  --color-medium2: #ecbd8d;
   --color-dark: #ff922b;
 }
 
@@ -23,6 +24,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f4e6ff;
+  /* background-color: #e6e6ff; */
 }
 
 .app {
@@ -31,6 +34,20 @@ body {
   grid-template-columns: 34rem 44rem;
   column-gap: 4rem;
   align-items: start;
+}
+
+.heading {
+  /* font-family: "Playfair Display SC", serif; */
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 5rem;
+  letter-spacing: -1px;
+  word-spacing: 15px;
+  margin-bottom: 4rem;
+}
+
+.centre {
+  display: flex;
+  justify-content: center;
 }
 
 .button {
@@ -70,6 +87,10 @@ body {
 
 .selected,
 .sidebar li:hover {
+  background-color: var(--color-medium2);
+}
+
+.nuetral {
   background-color: var(--color-lightest);
 }
 
@@ -101,10 +122,12 @@ body {
 
 .green {
   color: #66a80f;
+  font-weight: 600;
 }
 
 .red {
   color: #e03131;
+  font-weight: 600;
 }
 
 form {
