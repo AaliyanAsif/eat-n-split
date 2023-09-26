@@ -4,27 +4,7 @@ import FormAddFriend from "./components/FormAddFriend";
 import FormSplitBill from "./components/FormSplitBill";
 import FriendsList from "./components/FriendsList";
 import Heading from "./components/Heading";
-
-const initialFriends = [
-  {
-    id: 118836,
-    name: "Clark",
-    image: "https://i.pravatar.cc/48?u=118836",
-    balance: -7,
-  },
-  {
-    id: 933372,
-    name: "Sarah",
-    image: "https://i.pravatar.cc/48?u=933372",
-    balance: 20,
-  },
-  {
-    id: 499476,
-    name: "Anthony",
-    image: "https://i.pravatar.cc/48?u=499476",
-    balance: 0,
-  },
-];
+import { initialFriends } from "./data";
 
 function App() {
   const [showAddFriend, setShowAddFriend] = useState(false);
@@ -55,6 +35,16 @@ function App() {
     );
     setSelectedFriend(null);
   }
+
+  function handleDeleteFriend(friend) {
+    const confirmed = window.confirm(`${selectedFriend.name} will be removed!`);
+    if (!confirmed) return;
+    setFriend((friend) =>
+      friend.filter((friend) => friend.id !== selectedFriend.id)
+    );
+    setSelectedFriend(null);
+  }
+
   return (
     <div>
       <Heading />
@@ -75,6 +65,7 @@ function App() {
           <FormSplitBill
             selectedFriend={selectedFriend}
             onSplitBill={handleSplitBill}
+            onDeleteFriend={handleDeleteFriend}
           />
         )}
       </div>
